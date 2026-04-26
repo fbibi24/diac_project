@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sistema UCM </title>
+        <link rel="stylesheet" href="Estilo.css">
+    </head>
+
+<body>
+             <header class="header-container">
+    <div class="logo-img">
+        <img src="logo.jpg" width="95" height="95" alt="logo ucm"/>
+
+        <div class="logo-texto">
+        <h2> Portal do Estudante </h2> <br>
+        <h4> UNIVERSIDADE CATOLICA DE MOCAMBIQUE </h4>
+        </div>
+    </div>
+    <nav class="menu">
+        <a href="Home.html"><i class="fa-solid fa-house"></i></a><span> | </span>
+        <a href="login2.html"><i class="fa-solid fa-user"></i></a><span> | </span>
+        <a href="FormularioUCM.html"><i class="fa-solid fa-file"></i></a><span> | </span>
+        <a href="#"><i class="fa-solid fa-arrows-rotate"></i></a>
+    </nav>
+    </header>
+
+<div class="container">
+    <h2>Solicitar documento</h2>
+    <form action="processar.php"method="POST"enctype="multipart/form-data">
+
+        <label>Nome:</label>
+        <input type="text" name="name" required>
+
+        <label>Numero de Estudante:</label>
+        <input type="text" name="Numero" required>
+
+        <label>Tipo de Servico:</label>
+        <select nome="documento">
+            <option>Inscricao</option>
+            <option>Matricula</option>
+        </select>
+
+        <label>Comprovativo:</label>
+        <input type="file" name="Ficheiro" required>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+</div>
+          <footer>
+             <div class="footer">
+                <hr>
+                <p> Author: Estudantes do 3o ano, Pos-Laboral</p><br>
+                &copy; 2026 copyright reserved - Universidade Catolica de Mocambique<br>
+            </div>
+        </footer>
+
+</body>
+</html>
